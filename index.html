@@ -43,9 +43,9 @@
         }
 
         function pressurl(){
-            let txt = document.getElementById("url-txt").value
+            let url = document.getElementById("url-txt").value
             let code = event.keyCode;
-            if (txt.trim() != ''){
+            if (url.trim() != ''){
                 if (code == 13){
                     window.open("https://www."+url,"_blank")
                     document.getElementById("url-txt").value = ""
